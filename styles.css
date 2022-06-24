@@ -24,7 +24,7 @@ body{
 
 .code{
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   overflow-y: auto;
   background-color: aqua;
   padding: 1rem;
@@ -69,5 +69,17 @@ h1{
   height: 10px;
   background-color: #4a707a;
   transition: 0.5s ease;
+}
+
+button{
+  width: 2rem;
+  height: 2rem;
+  flex-direction: row;
+}
+
+.buttona{
+  position: relative;
+  bottom: 47% ;
+  left: 3%;
 }
 /*# sourceMappingURL=styles.css.map */
