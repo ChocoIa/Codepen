@@ -38,6 +38,21 @@ document.getElementById("char").innerHTML = count;
         } else {
             text.setAttribute('maxlength', '')
         }
+        
+         const percent = 100*result.textContent.length/max;
+    
+        progress_bar.style.setProperty('width', percent+'%');
+             if (percent >= 0 && percent < 50) {
+                 progress_bar.style.backgroundColor = "Green"; 
+             }
+             if (percent >= 50 && percent < 80) {
+                progress_bar.style.backgroundColor = "Yellow"; 
+             }
+             if (percent >= 80 && percent < 100) {
+                progress_bar.style.backgroundColor = "Red"; 
+            }
+        
+
 
 }
 
@@ -50,4 +65,14 @@ b.addEventListener('click', () => {
 
 it.addEventListener('click', () => {
     text.value +="<em></em>";
+});
+
+const load = document.querySelector("img"); 
+
+text.addEventListener("input", () => {
+    load.style.visibility = "visible";
+});
+
+document.addEventListener("mouseover", () => {
+    load.style.visibility = "hidden";
 });

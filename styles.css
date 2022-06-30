@@ -61,14 +61,22 @@ h1{
 
 #progress {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  height: 10%;
+  position: relative;
+  background-color: white;
+
 }
 
-#progressBar {
-  width: 0.5%;
-  height: 10px;
-  background-color: #4a707a;
+#progress_bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
   transition: 0.5s ease;
+}
+
+#char{
+  position: absolute;
+  top: 0%;
 }
 
 button{
@@ -80,6 +88,11 @@ button{
 .buttona{
   position: relative;
   bottom: 47% ;
-  left: 3%;
+  left: 5%;
+}
+
+img{
+  width: 30px;
+  visibility: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
